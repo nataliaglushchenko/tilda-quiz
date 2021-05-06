@@ -1,0 +1,8 @@
+.quizOption{
+    cursor: pointer;
+}
+
+.quizOption:hover{
+    cursor: pointer;
+    background-color: #eee;
+}
