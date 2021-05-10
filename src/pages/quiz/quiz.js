@@ -112,7 +112,12 @@ function Quiz(props) {
         .split(',')
         .map(option => {
             return (
-                <QuizOption onClick={() => handleSelectOption(option)}>{option}</QuizOption>
+                <QuizOption 
+                    key={`${question.id}-${option}`}
+                    onClick={() => handleSelectOption(option)}
+                >
+                    {option}
+                </QuizOption>
             );
         });
 
